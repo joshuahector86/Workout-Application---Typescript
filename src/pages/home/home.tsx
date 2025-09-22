@@ -1,11 +1,12 @@
-import DayDropdown from "../day/day-dropdown";
+import DayDisplay from "../day/day-display";
 
 const Home = () => {
   return (
     <div className="flex flex-col gap-4 items-center">
-      <h1 className="text-2xl">Dimitri Hector Workout Application</h1>
-
-      <DayDropdown />
+      <h1 className="text-3xl">
+        <p>Workout Application</p>
+      </h1>
+      <DayDisplay />
     </div>
   );
 };
