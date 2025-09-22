@@ -26,37 +26,52 @@ interface Exercise {
 
 interface DayData {
   title: string;
+  description: string;
   content: Exercise[];
 }
 
 const dayData: Record<PossibleDays, DayData> = {
   sunday: {
-    title: "Sunday Recovery",
+    title: "Chest & Back",
+    description:
+      "Your body is capable of incredible things when you push past the voice that says I can't. Every rep, every step, every drop of sweat is proof that you're stronger than your excuses. The only workout you'll regret is the one you didn't do.",
     content: [...workouts.chest, ...workouts.back],
   },
 
   monday: {
-    title: "Monday - Legs",
+    title: "Quads & Calves",
+    description:
+      "Champions aren't made in the comfort zone—they're forged in the fire of challenge and perseverance. When your muscles burn and your lungs scream, that's your body adapting and growing stronger. Embrace the discomfort because it's temporary, but the strength you build is permanent.",
     content: [...workouts.quads, ...workouts.calves],
   },
   tuesday: {
-    title: "Tuesday - Push",
+    title: "Mobility, Extensions & Abs",
+    description:
+      "Progress isn't always visible in the mirror, but it's happening in ways you can't see. Your heart gets stronger, your bones get denser, and your mind gets tougher with every workout. Trust the process and celebrate showing up, even when motivation is nowhere to be found.",
     content: [...workouts.abs, ...workouts.mobility],
   },
   wednesday: {
-    title: "Wednesday - Pull",
+    title: "Triceps & Biceps",
+    description:
+      "The hardest part of any workout is starting, but once you begin, momentum carries you forward. Your future self is counting on the decisions you make today in this moment. Make them proud by choosing movement over stillness, action over hesitation.",
     content: [...workouts.triceps, ...workouts.biceps],
   },
   thursday: {
-    title: "Thursday - Core",
+    title: "Hamstrings & Glutes",
+    description:
+      "Every expert was once a beginner who refused to give up. Your current limitations are not your permanent reality—they're just your starting point. Focus on being 1% better than yesterday, and watch how those small improvements compound into extraordinary results.",
     content: [...workouts.hamstrings, ...workouts.booty],
   },
   friday: {
-    title: "Friday - Full Body",
+    title: "Shoulders",
+    description:
+      "Your body will go where your mind leads it, so fill your thoughts with determination and possibility. When the weight feels heavy, remember that you're not just lifting iron—you're lifting your confidence, discipline, and self-respect. The strongest muscle you can develop is the one between your ears.",
     content: [...workouts.shoulders],
   },
   saturday: {
-    title: "Saturday - Active Recovery",
+    title: "REST DAY",
+    description:
+      "Soreness is your body's way of saying thank you for pushing it to grow. Each workout is an investment in a stronger, healthier, more resilient version of yourself. You don't have to be perfect—you just have to be consistent and willing to begin again each day.",
     content: [...workouts.rest],
   },
 };
@@ -72,7 +87,7 @@ const DayDisplay = () => {
   const DayDropDownMenu = () => {
     return (
       <DropdownMenu>
-        <DropdownMenuTrigger className="font-bold text-2xl hover:bg-accent">
+        <DropdownMenuTrigger className="font-bold text-2xl hover:bg-accent underline">
           {selectedDay.toLocaleUpperCase() || "Select a day"}
         </DropdownMenuTrigger>
 
@@ -95,23 +110,13 @@ const DayDisplay = () => {
     <div className="w-full">
       <div className="flex flex-col gap-4">
         <DayDropDownMenu />
-        <div>
-          <p>
-            Push through an intense upper body strength session focusing on
-            chest, shoulders, and triceps with compound movements that will
-            challenge your limits. Complete 4 sets of each exercise with 60-90
-            seconds rest between sets to maximize muscle growth and endurance.
-          </p>
-        </div>
-        <div>
-          <p>
-            Warm-up: Begin with 5 minutes of dynamic stretching and light cardio
-            to prepare your muscles and joints for today's training session.
-          </p>
-        </div>
-
+        <h2 className="text-xl font-semibold">{currentData.title}</h2>
+        <p className="text-sm opacity-90 mb-4">{currentData.description}</p>
         {currentData.content.map((exercise) => (
-          <div key={exercise.id} className=" bg-opacity-50 rounded-lg p-4">
+          <div
+            key={exercise.id}
+            className=" bg-opacity-50 bg-zinc-900 rounded-2xl p-4 "
+          >
             <div className="flex items-start gap-4">
               <img
                 src={exercise.imageUrl}
