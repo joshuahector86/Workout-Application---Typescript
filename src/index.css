@@ -4,12 +4,8 @@
 @custom-variant dark (&:is(.dark *));
 
 body {
-  padding: 10px;
   min-width: 100vw;
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 @media (prefers-color-scheme: light) {
