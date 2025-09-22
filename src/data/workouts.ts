@@ -58,21 +58,21 @@ const backWorkouts = [
 
 const tricepsWorkouts = [
   {
-    id: 16,
+    id: 8,
     name: "Tricep Pushdowns",
     description:
       "A cable exercise that targets the triceps by pushing a bar or rope attachment downward from chest level. Isolates the back of the arms for strength and definition.",
     imageUrl: "https://example.com/tricep-pushdowns.jpg",
   },
   {
-    id: 17,
+    id: 9,
     name: "Tricep Extensions With Dumbbells",
     description:
       "An isolation exercise using dumbbells to target the triceps through overhead or lying extension movements. Focuses on lengthening and contracting the tricep muscles under control.",
     imageUrl: "https://example.com/tricep-extensions-dumbbells.jpg",
   },
   {
-    id: 18,
+    id: 10,
     name: "Tricep Push Down Machine",
     description:
       "A machine-based tricep exercise that targets the back of the arms through controlled pushing movements. Provides stable resistance for tricep isolation and muscle development.",
@@ -83,21 +83,21 @@ const tricepsWorkouts = [
 //----------------------------------------------------- BICEPS --------------------------------------------------------------//
 const bicepsWorkouts = [
   {
-    id: 19,
+    id: 11,
     name: "Lateral Dumbbell Curls",
     description:
       "A bicep exercise performed with dumbbells at the sides, curling weights up toward the shoulders. Targets the biceps while maintaining neutral grip positioning for arm development.",
     imageUrl: "https://example.com/lateral-dumbbell-curls.jpg",
   },
   {
-    id: 20,
+    id: 12,
     name: "Barbell Curls",
     description:
       "A classic bicep exercise using a barbell to curl weight from hip level to chest level. Builds overall bicep mass and strength through controlled lifting motion.",
     imageUrl: "https://example.com/barbell-curls.jpg",
   },
   {
-    id: 21,
+    id: 13,
     name: "Single Arm Dumbbell Over Bench Curls",
     description:
       "An isolation bicep exercise performed with one arm supported over a bench for stability. Provides focused bicep contraction with enhanced range of motion and control.",
@@ -108,28 +108,28 @@ const bicepsWorkouts = [
 //----------------------------------------------------- SHOULDERS -----------------------------------------------------------//
 const shouldersWorkouts = [
   {
-    id: 27,
+    id: 14,
     name: "Lateral Raises",
     description:
       "A shoulder isolation exercise that targets the lateral deltoids by lifting weights out to the sides. Builds shoulder width and improves shoulder stability through controlled lateral movement.",
     imageUrl: "https://example.com/lateral-raises.jpg",
   },
   {
-    id: 28,
+    id: 15,
     name: "Overhead Shoulder Press With Dumbbells",
     description:
       "A compound shoulder exercise using dumbbells to press weight overhead from shoulder level. Targets all three heads of the deltoids along with triceps for overall shoulder development.",
     imageUrl: "https://example.com/overhead-shoulder-press-dumbbells.jpg",
   },
   {
-    id: 29,
+    id: 16,
     name: "Shoulder Shrugs",
     description:
       "An exercise that targets the trapezius muscles by lifting the shoulders up toward the ears. Builds upper back and neck strength through simple vertical shoulder movement.",
     imageUrl: "https://example.com/shoulder-shrugs.jpg",
   },
   {
-    id: 30,
+    id: 17,
     name: "Reverse Flys With Dumbbells",
     description:
       "A rear deltoid exercise performed by lifting dumbbells out to the sides while bent forward. Targets the posterior deltoids and improves posture by strengthening the back of the shoulders.",
@@ -141,21 +141,21 @@ const shouldersWorkouts = [
 
 const quadsWorkouts = [
   {
-    id: 8,
+    id: 18,
     name: "Leg Press",
     description:
       "A machine-based exercise that targets the quadriceps, glutes, and hamstrings by pressing weight with the legs. Provides a safe way to load the lower body with heavy resistance.",
     imageUrl: "https://example.com/leg-press.jpg",
   },
   {
-    id: 9,
+    id: 19,
     name: "Quad Extensions",
     description:
       "An isolation exercise performed on a leg extension machine that specifically targets the quadriceps muscles. Focuses on knee extension movement to build front thigh strength.",
     imageUrl: "https://example.com/quad-extensions.jpg",
   },
   {
-    id: 10,
+    id: 20,
     name: "Bulgarian Split Squat",
     description:
       "A single-leg exercise performed with the rear foot elevated that targets the quadriceps, glutes, and stabilizing muscles. Improves unilateral leg strength and balance.",
@@ -166,21 +166,21 @@ const quadsWorkouts = [
 //----------------------------------------------------- HAMSTRINGS ----------------------------------------------------------//
 const hamstringsWorkouts = [
   {
-    id: 22,
+    id: 21,
     name: "Sumo Deadlift",
     description:
       "A deadlift variation with a wide stance that targets the glutes, hamstrings, and inner thighs. Emphasizes hip hinge movement with feet positioned wider than shoulder-width apart.",
     imageUrl: "https://example.com/sumo-deadlift.jpg",
   },
   {
-    id: 25,
+    id: 22,
     name: "Hamstring Curls",
     description:
       "An isolation exercise that targets the hamstring muscles by curling the heels toward the glutes. Can be performed on a machine or with resistance bands for posterior thigh development.",
     imageUrl: "https://example.com/hamstring-curls.jpg",
   },
   {
-    id: 26,
+    id: 23,
     name: "Hamstring Lift With Forward Fold",
     description:
       "A hamstring exercise combining hip hinge movement with forward folding to target the back of the thighs. Improves hamstring flexibility while building strength through controlled movement.",
@@ -191,21 +191,21 @@ const hamstringsWorkouts = [
 //----------------------------------------------------- BOOTY ---------------------------------------------------------------//
 const bootyWorkouts = [
   {
-    id: 23,
+    id: 24,
     name: "Cossack Squats",
     description:
       "A lateral squat movement that targets the glutes, quads, and hip mobility by shifting weight to one leg while the other extends. Improves single-leg strength and lateral flexibility.",
     imageUrl: "https://example.com/cossack-squats.jpg",
   },
   {
-    id: 24,
+    id: 25,
     name: "Glute Bridge Machine",
     description:
       "A glute-focused exercise performed on a machine or floor that targets the gluteus maximus through hip extension. Builds posterior chain strength and improves hip stability.",
     imageUrl: "https://example.com/glute-bridge-machine.jpg",
   },
   {
-    id: 31,
+    id: 26,
     name: "Hip Thrusts",
     description:
       "A weightlifting exercise that primarily targets the glute muscles.",
@@ -216,14 +216,14 @@ const bootyWorkouts = [
 //----------------------------------------------------- CALVES --------------------------------------------------------------//
 const calvesWorkouts = [
   {
-    id: 11,
+    id: 27,
     name: "Dumbbell Calf Raises",
     description:
       "A calf exercise performed holding dumbbells while rising up on the toes to target the gastrocnemius and soleus muscles. Builds lower leg strength and definition through plantar flexion movement.",
     imageUrl: "https://example.com/dumbbell-calf-raises.jpg",
   },
   {
-    id: 12,
+    id: 28,
     name: "Machine Calf Press",
     description:
       "A calf exercise performed on a leg press or dedicated calf machine that targets the calf muscles through pressing with the toes. Provides controlled resistance for calf muscle development.",
@@ -234,7 +234,7 @@ const calvesWorkouts = [
 //----------------------------------------------------- REST ---------------------------------------------------------------//
 const restWorkouts = [
   {
-    id: 1,
+    id: 29,
     name: "Rest Day",
     description: "Take a break and allow your body to recover.",
     imageUrl: "https://example.com/rest-day.jpg",
@@ -244,7 +244,7 @@ const restWorkouts = [
 //----------------------------------------------------- ABS ----------------------------------------------------------------//
 const absWorkouts = [
   {
-    id: 13,
+    id: 30,
     name: "5 Minute Abs Sequence",
     description:
       "A quick abdominal workout routine that targets all core muscles through a series of exercises. Combines multiple movements to strengthen and tone the entire midsection efficiently.",
@@ -255,14 +255,14 @@ const absWorkouts = [
 //----------------------------------------------------- MOBILITY -----------------------------------------------------------//
 const mobilityWorkouts = [
   {
-    id: 14,
+    id: 31,
     name: "Middle Splits Mobility",
     description:
       "A flexibility routine focused on improving hip mobility and achieving middle splits position. Targets hip flexors, adductors, and hamstrings to increase lateral leg flexibility.",
     imageUrl: "https://example.com/middle-splits-mobility.jpg",
   },
   {
-    id: 15,
+    id: 32,
     name: "Ballet Floor Barre For Extensions",
     description:
       "A ballet-inspired floor routine that focuses on leg extensions and flexibility using barre techniques. Improves leg height, control, and graceful movement patterns.",

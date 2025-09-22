@@ -7,6 +7,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { Button } from "@/components/ui/button";
 
 type PossibleDays =
   | "sunday"
@@ -87,8 +88,13 @@ const DayDisplay = () => {
   const DayDropDownMenu = () => {
     return (
       <DropdownMenu>
-        <DropdownMenuTrigger className="font-bold text-2xl hover:bg-accent underline">
-          {selectedDay.toLocaleUpperCase() || "Select a day"}
+        <DropdownMenuTrigger className="font-bold text-2xl underline">
+          <Button
+            variant={"outline"}
+            className="w-full border-gray-700 text-2xl p-5 "
+          >
+            {selectedDay.toLocaleUpperCase() || "Select a day"}
+          </Button>
         </DropdownMenuTrigger>
 
         <DropdownMenuContent>
@@ -108,10 +114,10 @@ const DayDisplay = () => {
 
   return (
     <div className="">
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-5">
         <DayDropDownMenu />
-        <h2 className="text-xl font-semibold">{currentData.title}</h2>
-        <p className="text-sm opacity-90 mb-4">{currentData.description}</p>
+        <h2 className="text-3xl font-semibold mt-5">{currentData.title}</h2>
+        <p className="text-md opacity-90 mb-4">{currentData.description}</p>
         {currentData.content.map((exercise) => (
           <div
             key={exercise.id}
