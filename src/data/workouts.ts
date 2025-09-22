@@ -149,6 +149,51 @@ const calvesWorkouts = [
     imageUrl: "https://example.com/seated-calf-raises.jpg",
   },
 ];
+
+//----------------------------------------------------- REST ---------------------------------------------------------------//
+const restWorkouts = [
+  {
+    id: 1,
+    name: "Rest Day",
+    description: "Take a break and allow your body to recover.",
+    imageUrl: "https://example.com/rest-day.jpg",
+  },
+];
+
+//----------------------------------------------------- ABS ----------------------------------------------------------------//
+const absWorkouts = [
+  {
+    id: 1,
+    name: "Plank",
+    description: "An isometric exercise that targets the core muscles.",
+    imageUrl: "https://example.com/plank.jpg",
+  },
+  {
+    id: 2,
+    name: "Bicycle Crunches",
+    description:
+      "A dynamic exercise that targets the rectus abdominis and obliques.",
+    imageUrl: "https://example.com/bicycle-crunches.jpg",
+  },
+];
+
+//----------------------------------------------------- MOBILITY -----------------------------------------------------------//
+const mobilityWorkouts = [
+  {
+    id: 1,
+    name: "Dynamic Stretching",
+    description:
+      "A series of movements that improve flexibility and range of motion.",
+    imageUrl: "https://example.com/dynamic-stretching.jpg",
+  },
+  {
+    id: 2,
+    name: "Foam Rolling",
+    description:
+      "A self-myofascial release technique that helps relieve muscle tightness.",
+    imageUrl: "https://example.com/foam-rolling.jpg",
+  },
+];
 export const workouts = {
   chest: chestWorkouts,
   back: backWorkouts,
@@ -159,4 +204,7 @@ export const workouts = {
   shoulders: shouldersWorkouts,
   calves: calvesWorkouts,
   booty: bootyWorkouts,
+  rest: restWorkouts,
+  abs: absWorkouts,
+  mobility: mobilityWorkouts,
 };
