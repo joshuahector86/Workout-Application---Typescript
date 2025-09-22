@@ -107,7 +107,7 @@ const DayDisplay = () => {
   };
 
   return (
-    <div className="w-full">
+    <div className="">
       <div className="flex flex-col gap-4">
         <DayDropDownMenu />
         <h2 className="text-xl font-semibold">{currentData.title}</h2>
@@ -120,7 +120,6 @@ const DayDisplay = () => {
             <div className="flex items-start gap-4">
               <img
                 src={exercise.imageUrl}
-                alt={exercise.name}
                 className="w-16 h-16 rounded-lg object-cover bg-gray-200"
                 onError={(e) => {
                   // Fallback for broken images
@@ -130,7 +129,7 @@ const DayDisplay = () => {
               />
               <div className="flex-1">
                 <h4 className="font-semibold text-lg mb-1">{exercise.name}</h4>
-                <p className="text-sm opacity-90">{exercise.description}</p>
+                <p className="text-md opacity-90">{exercise.description}</p>
                 <p className="text-xs opacity-70 mt-1">
                   4 Sets of 8 - 12 Reps | Rest 60 - 90 seconds
                 </p>
