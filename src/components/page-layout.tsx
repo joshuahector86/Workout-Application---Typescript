@@ -1,6 +1,6 @@
 import { ChevronLeft } from "lucide-react";
 
-type Accent = "red" | "cyan" | "purple" | "none";
+export type Accent = "red" | "cyan" | "purple" | "none";
 
 interface PageLayoutProps {
   title: string;

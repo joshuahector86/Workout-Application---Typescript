@@ -278,6 +278,7 @@ const mobilityWorkouts = [
     imageUrl: getImage("weight-lifting-photos/ballet-floor-barre.jpg"),
   },
 ];
+
 export const workouts = {
   chest: chestWorkouts,
   back: backWorkouts,

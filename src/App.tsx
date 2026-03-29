@@ -11,6 +11,7 @@ function App() {
         element={<WeightTraining />}
       />
       <Route path="/mobility" element={<Mobility />} />
+      <Route path="/mobility/exercise/:exerciseId" element={<Mobility />} />
       <Route path="/other" element={<OtherActivities />} />
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
