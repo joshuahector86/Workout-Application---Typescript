@@ -1,10 +1,19 @@
-import { Home } from "./pages";
+import { Navigate, Route, Routes } from "react-router-dom";
+import { Home, WeightTraining, Mobility, OtherActivities } from "./pages";
 
 function App() {
   return (
-    <div className="p-10">
-      <Home />
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/weight-training" element={<WeightTraining />} />
+      <Route
+        path="/weight-training/exercise/:exerciseId"
+        element={<WeightTraining />}
+      />
+      <Route path="/mobility" element={<Mobility />} />
+      <Route path="/other" element={<OtherActivities />} />
+      <Route path="*" element={<Navigate to="/" replace />} />
+    </Routes>
   );
 }
 
