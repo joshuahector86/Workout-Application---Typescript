@@ -97,9 +97,28 @@
   }
 }
 
+@keyframes shimmer {
+  0% {
+    background-position: -400% 0;
+  }
+  100% {
+    background-position: 400% 0;
+  }
+}
+
 @layer utilities {
   .display-font {
     font-family: "Bebas Neue", sans-serif;
     letter-spacing: 0.06em;
+  }
+  .animate-shimmer {
+    animation: shimmer 2s linear infinite;
+    background: linear-gradient(
+      90deg,
+      theme(colors.zinc.900) 25%,
+      theme(colors.zinc.700 / 35%) 50%,
+      theme(colors.zinc.900) 75%
+    );
+    background-size: 400% 100%;
   }
 }
