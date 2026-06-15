@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { CalendarDays, ChevronLeft, ChevronRight } from "lucide-react";
 import { useNavigate, useParams, useSearchParams } from "react-router-dom";
 import PageLayout, { type Accent } from "@/components/page-layout";
+import LazyImage from "@/components/lazy-image";
 
 export type PossibleDays =
   | "sunday"
@@ -294,10 +295,11 @@ const ProgramPage = ({
             <div className="grid grid-cols-1 gap-3 lg:grid-cols-[164px_minmax(0,1fr)] lg:items-start">
               <div className="border border-zinc-800 bg-zinc-950/60 p-2">
                 <div className="relative aspect-square overflow-hidden border border-zinc-800 bg-black">
-                  <img
+                  <LazyImage
                     src={exercise.imageUrl || FALLBACK_IMG}
                     alt={exercise.name}
                     className="h-full w-full object-cover"
+                    decoding="async"
                     onError={(e) => {
                       e.currentTarget.src = FALLBACK_IMG;
                     }}
@@ -338,10 +340,11 @@ const ProgramPage = ({
             <div className="relative aspect-video w-full overflow-hidden border border-zinc-800 bg-black">
               {shouldShowImageFallback ? (
                 <div className="absolute inset-0">
-                  <img
+                  <LazyImage
                     src={exercise.imageUrl || FALLBACK_IMG}
                     alt={exercise.name}
                     className="h-full w-full object-cover"
+                    decoding="async"
                     onError={(e) => {
                       e.currentTarget.src = FALLBACK_IMG;
                     }}
@@ -508,10 +511,12 @@ const ProgramPage = ({
             onClick={() => openExerciseDetail(exercise.id)}
             className="group relative aspect-[4/5] cursor-pointer overflow-hidden border border-zinc-800 bg-zinc-900 text-left"
           >
-            <img
+            <LazyImage
               src={exercise.imageUrl}
               alt={exercise.name}
               className="h-full w-full bg-zinc-800 object-cover transition-transform duration-500 group-hover:scale-105"
+              loading="lazy"
+              decoding="async"
               onError={(e) => {
                 e.currentTarget.src = FALLBACK_IMG;
               }}
